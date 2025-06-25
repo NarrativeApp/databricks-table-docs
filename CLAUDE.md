@@ -61,6 +61,42 @@ This repository includes a standardized analytics workflow structure in the `/an
 3. **Experiment Design:** Define success metrics, document statistical approach
 4. **Documentation:** All final analysis should be committed to this repository
 
+### Query Building Guidelines
+
+When building queries, follow these principles to ensure maintainability and portability:
+
+1. **Simplicity First**: Write queries that are as simple as possible while getting the job done. Avoid over-engineering.
+
+2. **Use CTEs (Common Table Expressions)**: Structure queries with CTEs to aid debugging and readability. This also helps when porting code to Count.co or other platforms.
+
+3. **Validate Against dbt**: Always validate queries against dbt patterns and test that they run successfully. Reference existing models in `/exmaple models/` for table definition patterns.
+
+4. **Table References**: Check how tables are referenced in example models - use the appropriate syntax (e.g., `{{ ref('table_name') }}` for dbt models).
+
+5. **Testing**: Every query must be tested to ensure it runs without errors. Include sample output when documenting queries.
+
+6. **Conciseness**: Keep queries concise and focused on the specific analytical need. Avoid including unnecessary columns or joins.
+
+Example structure from existing models:
+```sql
+WITH base_data AS (
+    SELECT 
+        user_id,
+        event_timestamp,
+        event_type
+    FROM {{ ref('source_table') }}
+    WHERE condition = true
+),
+aggregated AS (
+    SELECT 
+        user_id,
+        COUNT(*) as event_count
+    FROM base_data
+    GROUP BY user_id
+)
+SELECT * FROM aggregated
+```
+
 ### Key Metrics Definitions
 - **Select Activation:** First successful cull completion
 - **CMAU:** Count of Monthly Active Users (Select)
@@ -72,3 +108,75 @@ This repository includes a standardized analytics workflow structure in the `/an
 - Use Databricks cluster for query execution
 - Integrate with Amplitude for user journey analysis
 - Link analytics tasks to Linear issues for project management
+
+### Databricks Infrastructure
+- `analytics/notebooks/` - Python notebooks for interactive analysis and testing
+- `utils.py` - Common functions for data quality, visualization, and statistical analysis
+- Notebooks include automated validation, visualization, and export capabilities
+- Upload `.py` files to Databricks workspace for interactive development
+- Recommended cluster: 12.2 LTS runtime with Standard_DS3_v2 nodes
+
+## Query Testing Framework
+
+A simple Python-based testing framework is available for iterating and validating Databricks queries:
+
+### Setup
+
+1. **Install dependencies**:
+   ```bash
+   pip install databricks-sql-connector pandas
+   ```
+
+2. **Configure credentials** (choose one method):
+   - Environment variables:
+     ```bash
+     export DATABRICKS_SERVER_HOSTNAME="your-workspace.cloud.databricks.com"
+     export DATABRICKS_HTTP_PATH="/sql/1.0/warehouses/your-warehouse-id"
+     export DATABRICKS_TOKEN="your-access-token"
+     ```
+   - Config file: Copy `.databricks_config_template.json` to `.databricks_config.json` and fill in your details
+
+### Usage
+
+**Test a query file**:
+```bash
+python databricks_query_tester.py path/to/query.sql --limit 20
+```
+
+**Quick test with minimal output**:
+```bash
+python test_query.py path/to/query.sql
+```
+
+**Interactive mode**:
+```bash
+python databricks_query_tester.py
+```
+
+**Validate syntax only**:
+```bash
+python databricks_query_tester.py "SELECT * FROM table" --validate-only
+```
+
+**Save results to CSV**:
+```bash
+python databricks_query_tester.py query.sql --output results.csv
+```
+
+### Key Features
+
+- **Automatic dbt ref handling**: The tester strips `{{ ref('table_name') }}` syntax for direct execution
+- **Query validation**: Test syntax without full execution using `--validate-only`
+- **Limit results**: Default limit of 10 rows to prevent large data transfers during testing
+- **Interactive REPL**: Run queries interactively for quick iteration
+- **File or direct query**: Test from .sql files or provide queries directly
+
+### Testing Workflow
+
+1. Write query following the query building guidelines
+2. Test with small limit: `python test_query.py my_query.sql`
+3. Validate full results if needed: `python databricks_query_tester.py my_query.sql --limit 1000`
+4. Save sample output: `python databricks_query_tester.py my_query.sql --output sample_results.csv`
+5. Include validation results in documentation/reports
+
+This testing framework enables rapid iteration on queries while ensuring they run correctly against the actual Databricks warehouse.

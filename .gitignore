@@ -19,3 +19,6 @@
 
 # Claude
 .claude/
+
+# Databricks config
+.databricks_config.json
