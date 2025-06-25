@@ -1,0 +1,3 @@
+sign_up_method,total_starts,total_completions,completion_rate_pct,avg_minutes_to_complete,median_minutes_to_complete,completion_rate_last_30_days
+email,25494,19707,77.3,5.335845972209609,0.0,73.18
+google,30983,22929,74.01,3.015293321119917,0.0,65.5

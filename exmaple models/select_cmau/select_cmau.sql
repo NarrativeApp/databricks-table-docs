@@ -1,0 +1,98 @@
+{{ config(materialized="table") }}
+
+select * from {{ ref('select_cmau_2') }}
+
+-- Commenting out to keep incase the new version looks odd 
+-- SELECT
+--   start_day_inclusive,
+--   end_day_inclusive,
+--   select_users.user_id,
+--   (users_rating.user_id IS NOT NULL) AS is_cmau,
+--   COUNT(DISTINCT users_rating.day) AS days_culling_active,
+--   COUNT(DISTINCT select_users.day) AS days_active
+-- FROM
+-- (
+--   SELECT
+--     start_day_inclusive,
+--     end_day_inclusive
+--   FROM
+--     window_28_days
+--   WHERE
+--     start_day_inclusive >= '2021-01-01'
+--     AND end_day_inclusive <= (SELECT MAX(inserted_at)::date - INTERVAL '1 day' FROM select_events)
+-- ) windows
+-- LEFT OUTER JOIN
+-- (
+--   SELECT DISTINCT
+--     user_id,
+--     inserted_at::date AS day
+--   FROM
+--     select_events
+--   WHERE
+--     user_id IS NOT NULL
+-- ) select_users
+-- ON
+--   select_users.day >= windows.start_day_inclusive
+--   AND select_users.day <= windows.end_day_inclusive
+-- LEFT OUTER JOIN
+-- (
+--   SELECT DISTINCT
+--     user_id,
+--     day
+--   FROM
+--   (
+--     SELECT
+--       user_id,
+--       inserted_at::date AS day,
+--       data:project_id
+--     FROM
+--       select_events
+--     WHERE
+--       user_id IS NOT NULL
+--       AND topic IN
+--       (
+--         'select_color_images',
+--         'select_rate_images',
+--         'select_tag_images',
+--         'select_eliminate_images'
+--       )
+--   ) rating
+--   JOIN
+--   (
+--     SELECT DISTINCT
+--       project_id
+--     FROM
+--     (
+--       -- This replicates the logic of select_project_creation which can't be
+--       -- queried here because materialized views can't reference one another
+--       SELECT
+--         user_id,
+--         data:project_id::string,
+--         MIN(inserted_at) AS first_inserted_at,
+--         MIN(occurred_at) AS first_occurred_at,
+--         RANK() OVER (PARTITION BY user_id ORDER BY first_occurred_at ASC) AS project_number
+--       FROM
+--         select_events
+--       WHERE
+--         vsn = 4
+--         AND data:project_id IS NOT NULL
+--       GROUP BY
+--         user_id,
+--         data:project_id
+--     ) all_vsn4_projects
+--     WHERE
+--       first_inserted_at >= '2021-01-01'
+--       AND project_number >= 2
+--   ) second_and_later_projects
+--   ON
+--     second_and_later_projects.project_id = rating.project_id
+-- ) users_rating
+-- ON
+--   users_rating.user_id = select_users.user_id
+--   AND users_rating.day >= windows.start_day_inclusive
+--   AND users_rating.day <= windows.end_day_inclusive
+-- GROUP BY
+--   start_day_inclusive,
+--   end_day_inclusive,
+--   select_users.user_id,
+--   users_rating.user_id

@@ -1,0 +1,11 @@
+id,user_id,topic,sign_up_method,transaction_id,session_id,occurred_at
+98b12356-5b4c-4a42-94a1-8c9644602dd6,,web_lead_sign_up_started,email,,6d3a515f-ed54-46ca-b765-7fd94a61fdc7,2025-06-18 00:20:17.164
+4f99ca54-6fb2-453a-bafb-1eb348ec0802,,web_lead_sign_up_started,google,,d5b2b94a-9dd1-4985-8ff7-4ce80c40ecd4,2025-06-18 00:21:49.594
+47e642f7-b24d-4f86-b114-937d63555dd7,,web_lead_sign_up_started,google,,7a8f0a8f-195b-42ea-8a7b-c8961b3fd695,2025-06-18 00:24:07.120
+c3791065-fe1c-40c6-bee7-5cf080b8678e,,web_lead_sign_up_started,google,,20664349-250e-4d28-a6f6-39305b5237b4,2025-06-18 01:18:39.497
+341414ed-8486-4539-97e0-6dd93a49985b,,web_lead_sign_up_started,google,,e40f1bf6-c0bd-4a68-aaa3-0d5a2b0979a6,2025-06-18 00:33:40.551
+7efd1a39-0e77-4fd5-b402-1432c3eb08b0,,web_lead_sign_up_started,google,,28a8e8e4-2fdb-46d0-b2cf-674d9999df5d,2025-06-18 00:44:41.982
+70ec57dd-3c66-4cfd-98be-8cbdc0994425,,web_lead_sign_up_started,google,,96db3cc9-d79f-48db-b646-6e5ca15cb20a,2025-06-18 00:49:45.345
+f29ef250-69c8-43ad-a7b1-302cbc50e560,,web_lead_sign_up_started,google,,ebdadba0-a4b3-4179-bd61-2d38848ef8c9,2025-06-18 02:15:33.080
+4c8eb4ca-87d6-4021-8142-15d7feb512a0,,web_lead_sign_up_started,google,,9e3f4119-17e7-4f84-93ec-51665c43d891,2025-06-18 02:20:52.938
+1a62df47-5c6c-470d-91fb-24c1dee26022,,web_lead_sign_up_started,google,,bda0c6c0-8e93-43db-b3d7-42f3b8ca66a6,2025-06-18 02:27:10.097

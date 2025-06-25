@@ -22,3 +22,8 @@
 
 # Databricks config
 .databricks_config.json
+
+# Python
+venv/
+__pycache__/
+*.pyc

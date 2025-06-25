@@ -1,0 +1,115 @@
+
+
+select * from {{ ref('select_emau_2') }}
+
+-- Commenting out incase we need to come back to it
+
+-- WITH
+--   select_users AS (
+--     SELECT DISTINCT
+--       user_id,
+--       inserted_at::date AS day
+--     FROM
+--       select_events
+--     WHERE
+--       user_id IS NOT NULL
+--       AND inserted_at > '2023-10-01'
+--   ),
+--   window_28_days_ AS (
+--     SELECT
+--       *
+--     FROM
+--       window_28_days
+--   ),
+--   max_date AS (
+--     SELECT
+--       MAX(inserted_at)::date - interval '1 day' AS end_date
+--     FROM
+--       select_events
+--   ),
+--   windows AS (
+--     SELECT
+--       start_day_inclusive,
+--       end_day_inclusive
+--     FROM
+--       window_28_days_,
+--       max_date
+--     WHERE
+--       start_day_inclusive >= '2023-10-01'
+--       AND end_day_inclusive <= end_date
+--   ),
+--   users_editing AS (
+--     SELECT DISTINCT
+--       user_id,
+--       day,
+--       MAX(inference_payment_type) AS is_paid
+--     FROM
+--       (
+--         SELECT
+--           eis.user_id,
+--           inference_start_time::date AS day,
+--           project_id,
+--           CASE
+--             WHEN pack_used_type = 'credit_purchases' THEN 1
+--             ELSE 0
+--           END AS inference_payment_type
+--         FROM
+--           {{ ref('select_edit_inference_summary') }} eis
+--           LEFT JOIN {{ ref('select_edit_local_inference_and_which_pack_used') }} AS lsp ON eis.inference_id = lsp.local_inference_id
+--       ) editing
+--       JOIN (
+--         SELECT DISTINCT
+--           project_id
+--         FROM
+--           (
+--             SELECT
+--               user_id,
+--               data:project_id::string,
+--               MIN(inserted_at) AS first_inserted_at,
+--               MIN(occurred_at) AS first_occurred_at,
+--               RANK() OVER (
+--                 PARTITION BY
+--                   user_id
+--                 ORDER BY
+--                   first_occurred_at ASC
+--               ) AS project_number
+--             FROM
+--               select_events
+--             WHERE
+--               vsn = 4
+--               AND data:project_id IS NOT NULL
+--               AND topic = 'select_edit_image_edited_outcome'
+--               and inserted_at > '2023-10-01'
+--             GROUP BY
+--               user_id,
+--               data:project_id
+--           ) all_vsn4_projects
+--         WHERE
+--           first_inserted_at >= '2023-10-01'
+--           AND project_number >= 2
+--       ) second_and_later_projects ON second_and_later_projects.project_id = editing.project_id
+--     GROUP BY
+--       user_id,
+--       day
+--   )
+-- SELECT
+--   w.start_day_inclusive,
+--   w.end_day_inclusive,
+--   u.user_id,
+--   r.is_paid,
+--   (r.user_id IS NOT NULL) AS is_emau,
+--   COUNT(DISTINCT r.day) AS days_editing_active,
+--   COUNT(DISTINCT u.day) AS days_active
+-- FROM
+--   windows w
+--   LEFT OUTER JOIN select_users u ON u.day >= w.start_day_inclusive
+--   AND u.day <= w.end_day_inclusive
+--   LEFT OUTER JOIN users_editing AS r ON r.user_id = u.user_id
+--   AND r.day >= w.start_day_inclusive
+--   AND r.day <= w.end_day_inclusive
+-- GROUP BY
+--   w.start_day_inclusive,
+--   w.end_day_inclusive,
+--   u.user_id,
+--   r.user_id,
+--   r.is_paid

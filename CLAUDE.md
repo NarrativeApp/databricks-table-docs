@@ -16,6 +16,26 @@ This repository contains documentation for Databricks warehouse tables. The main
   - `infrastructure/` - System, ML, and operational tables
   - `README.md` - Navigation guide for the split documentation
 
+## Important Table Naming Conventions
+
+Based on the example models in `/exmaple models/`, tables are referenced in two ways:
+
+1. **Direct references in some models**:
+   - `web_events` - Likely a view/alias for web-based events
+   - `select_events` - Likely a view/alias for Select application events
+   
+2. **Fully qualified table names (catalog.schema.table)**:
+   - `narrative.events.base` - Main events table containing all event types
+   - `narrative.core.users` - Users table
+   - `narrative.core.accounts` - Accounts table
+
+**Event Data Access Pattern**:
+- Event data is stored in a semi-structured `data` column
+- Access fields using: `data:field_name::type` (e.g., `data:sign_up_method::string`)
+- Common event topics: `web_lead_sign_up_started`, `web_sign_up_succeeded`, `web_sign_up_failed`
+
+**Note**: When in doubt, use the fully qualified table names (e.g., `narrative.events.base`) as shown in the documentation.
+
 ## Working with the Documentation
 
 The documentation has been split into manageable files in the `databricks-docs/` directory:
@@ -122,9 +142,16 @@ A simple Python-based testing framework is available for iterating and validatin
 
 ### Setup
 
-1. **Install dependencies**:
+1. **Create and activate virtual environment**:
    ```bash
-   pip install databricks-sql-connector pandas
+   python3 -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   # Or manually: pip install databricks-sql-connector pandas
    ```
 
 2. **Configure credentials** (choose one method):
