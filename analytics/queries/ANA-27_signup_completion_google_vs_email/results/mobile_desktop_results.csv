@@ -1,0 +1,5 @@
+device_type,sign_up_method,total_starts,total_completions,completion_rate_pct,avg_minutes_to_complete,sample_size_category
+Desktop,email,23128,17918,77.47,5.37563807426684,Significant
+Desktop,google,28264,21295,75.34,3.101132720666809,Significant
+Mobile,email,2112,1597,75.62,5.448332422088573,Significant
+Mobile,google,2328,1379,59.24,2.075641915336572,Significant

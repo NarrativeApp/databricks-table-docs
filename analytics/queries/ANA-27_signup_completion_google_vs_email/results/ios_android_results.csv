@@ -1,0 +1,7 @@
+platform,sign_up_method,total_starts,total_completions,completion_rate_pct,avg_minutes_to_complete,sample_size_category
+Android,email,654,459,70.18,3.6565656565656566,Significant
+Android,google,1001,564,56.34,1.8869863013698631,Significant
+Desktop,email,23128,17918,77.47,5.37563807426684,Significant
+Desktop,google,28264,21295,75.34,3.101132720666809,Significant
+iOS,email,1459,1139,78.07,6.305825242718447,Significant
+iOS,google,1328,815,61.37,2.204200700116686,Significant

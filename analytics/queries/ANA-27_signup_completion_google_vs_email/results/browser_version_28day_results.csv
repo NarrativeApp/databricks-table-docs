@@ -1,0 +1,201 @@
+start_day_inclusive,end_day_inclusive,device_category,platform_category,browser_platform,browser_major_version,sign_up_method,total_starts,total_completions,completion_rate_pct,google_vs_email_gap,confidence_level,version_category
+2025-05-29,2025-06-25,Desktop,Windows,Chrome Windows,137,email,278,217,78.06,9.790000000000006,High Confidence,Current Chrome
+2025-05-29,2025-06-25,Desktop,Windows,Chrome Windows,137,google,394,269,68.27,,High Confidence,Current Chrome
+2025-05-29,2025-06-25,Desktop,Windows,Chrome Windows,136,email,56,46,82.14,13.450000000000003,High Confidence,Previous Chrome
+2025-05-29,2025-06-25,Desktop,Windows,Chrome Windows,136,google,99,68,68.69,,High Confidence,Previous Chrome
+2025-05-29,2025-06-25,Desktop,Windows,Chrome Windows,135,email,3,2,66.67,,Very Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,Windows,Chrome Windows,131,email,3,3,100.0,,Very Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,Windows,Chrome Windows,109,email,4,4,100.0,25.0,Very Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,Windows,Chrome Windows,109,google,4,3,75.0,,Very Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,Windows,Firefox Windows,139,email,42,27,64.29,-6.8999999999999915,Medium Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,Windows,Firefox Windows,139,google,59,42,71.19,,High Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,Windows,Firefox Windows,138,email,6,2,33.33,-33.34,Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,Windows,Firefox Windows,138,google,6,4,66.67,,Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,Windows,Firefox Windows,137,email,4,3,75.0,,Very Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,137,email,275,195,70.91,4.670000000000002,High Confidence,Current Chrome
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,137,google,388,257,66.24,,High Confidence,Current Chrome
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,136,email,147,109,74.15,4.560000000000002,High Confidence,Previous Chrome
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,136,google,171,119,69.59,,High Confidence,Previous Chrome
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,135,email,26,20,76.92,7.950000000000003,Medium Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,135,google,29,20,68.97,,Medium Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,134,email,9,8,88.89,26.39,Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,134,google,8,5,62.5,,Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,133,email,6,5,83.33,33.33,Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,133,google,6,3,50.0,,Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,132,email,4,1,25.0,,Very Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,131,email,8,7,87.5,,Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,128,email,9,8,88.89,-1.1099999999999994,Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,128,google,10,9,90.0,,Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,116,email,8,6,75.0,5.0,Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Chrome macOS,116,google,10,7,70.0,,Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Safari macOS,19,email,3,3,100.0,33.33,Very Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Safari macOS,19,google,3,2,66.67,,Very Low Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Safari macOS,18,email,379,269,70.98,3.4000000000000057,High Confidence,Current Safari
+2025-05-29,2025-06-25,Desktop,macOS,Safari macOS,18,google,327,221,67.58,,High Confidence,Current Safari
+2025-05-29,2025-06-25,Desktop,macOS,Safari macOS,17,email,120,90,75.0,4.790000000000006,High Confidence,Previous Safari
+2025-05-29,2025-06-25,Desktop,macOS,Safari macOS,17,google,94,66,70.21,,High Confidence,Previous Safari
+2025-05-29,2025-06-25,Desktop,macOS,Safari macOS,16,email,54,44,81.48,12.040000000000006,High Confidence,Other Version
+2025-05-29,2025-06-25,Desktop,macOS,Safari macOS,16,google,36,25,69.44,,Medium Confidence,Other Version
+2025-05-29,2025-06-25,Mobile,Android,Chrome Android,137,email,56,33,58.93,23.79,High Confidence,Current Chrome
+2025-05-29,2025-06-25,Mobile,Android,Chrome Android,137,google,74,26,35.14,,High Confidence,Current Chrome
+2025-05-29,2025-06-25,Mobile,Android,Chrome Android,136,email,10,9,90.0,37.06,Low Confidence,Previous Chrome
+2025-05-29,2025-06-25,Mobile,Android,Chrome Android,136,google,17,9,52.94,,Low Confidence,Previous Chrome
+2025-05-29,2025-06-25,Mobile,iOS,Chrome iOS,137,email,7,5,71.43,6.430000000000007,Low Confidence,Current Chrome
+2025-05-29,2025-06-25,Mobile,iOS,Chrome iOS,137,google,20,13,65.0,,Medium Confidence,Current Chrome
+2025-05-29,2025-06-25,Mobile,iOS,Safari iOS,18,email,67,45,67.16,12.259999999999998,High Confidence,Current Safari
+2025-05-29,2025-06-25,Mobile,iOS,Safari iOS,18,google,51,28,54.9,,High Confidence,Current Safari
+2025-05-29,2025-06-25,Mobile,iOS,Safari iOS,17,email,3,3,100.0,20.0,Very Low Confidence,Previous Safari
+2025-05-29,2025-06-25,Mobile,iOS,Safari iOS,17,google,5,4,80.0,,Low Confidence,Previous Safari
+2025-05-28,2025-06-24,Desktop,Windows,Chrome Windows,137,email,264,207,78.41,10.849999999999994,High Confidence,Current Chrome
+2025-05-28,2025-06-24,Desktop,Windows,Chrome Windows,137,google,373,252,67.56,,High Confidence,Current Chrome
+2025-05-28,2025-06-24,Desktop,Windows,Chrome Windows,136,email,64,53,82.81,13.370000000000005,High Confidence,Previous Chrome
+2025-05-28,2025-06-24,Desktop,Windows,Chrome Windows,136,google,108,75,69.44,,High Confidence,Previous Chrome
+2025-05-28,2025-06-24,Desktop,Windows,Chrome Windows,135,email,3,2,66.67,,Very Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,Windows,Chrome Windows,109,email,3,3,100.0,25.0,Very Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,Windows,Chrome Windows,109,google,4,3,75.0,,Very Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,Windows,Firefox Windows,139,email,40,26,65.0,-5.0,Medium Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,Windows,Firefox Windows,139,google,60,42,70.0,,High Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,Windows,Firefox Windows,138,email,6,2,33.33,-33.34,Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,Windows,Firefox Windows,138,google,6,4,66.67,,Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,Windows,Firefox Windows,137,email,4,3,75.0,,Very Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,137,email,263,183,69.58,3.539999999999992,High Confidence,Current Chrome
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,137,google,374,247,66.04,,High Confidence,Current Chrome
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,136,email,159,120,75.47,6.689999999999998,High Confidence,Previous Chrome
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,136,google,189,130,68.78,,High Confidence,Previous Chrome
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,135,email,24,19,79.17,7.739999999999995,Medium Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,135,google,28,20,71.43,,Medium Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,134,email,9,8,88.89,22.22,Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,134,google,9,6,66.67,,Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,133,email,5,4,80.0,30.0,Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,133,google,6,3,50.0,,Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,132,email,3,0,0.0,,Very Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,131,email,8,7,87.5,-12.5,Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,131,google,3,3,100.0,,Very Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,128,email,8,7,87.5,-4.170000000000002,Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,128,google,12,11,91.67,,Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,116,email,8,6,75.0,5.0,Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Chrome macOS,116,google,10,7,70.0,,Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Safari macOS,19,email,3,3,100.0,33.33,Very Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Safari macOS,19,google,3,2,66.67,,Very Low Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Safari macOS,18,email,377,267,70.82,1.6799999999999926,High Confidence,Current Safari
+2025-05-28,2025-06-24,Desktop,macOS,Safari macOS,18,google,324,224,69.14,,High Confidence,Current Safari
+2025-05-28,2025-06-24,Desktop,macOS,Safari macOS,17,email,120,89,74.17,4.070000000000007,High Confidence,Previous Safari
+2025-05-28,2025-06-24,Desktop,macOS,Safari macOS,17,google,97,68,70.1,,High Confidence,Previous Safari
+2025-05-28,2025-06-24,Desktop,macOS,Safari macOS,16,email,57,47,82.46,12.189999999999998,High Confidence,Other Version
+2025-05-28,2025-06-24,Desktop,macOS,Safari macOS,16,google,37,26,70.27,,Medium Confidence,Other Version
+2025-05-28,2025-06-24,Mobile,Android,Chrome Android,137,email,53,31,58.49,22.380000000000003,High Confidence,Current Chrome
+2025-05-28,2025-06-24,Mobile,Android,Chrome Android,137,google,72,26,36.11,,High Confidence,Current Chrome
+2025-05-28,2025-06-24,Mobile,Android,Chrome Android,136,email,12,9,75.0,22.060000000000002,Low Confidence,Previous Chrome
+2025-05-28,2025-06-24,Mobile,Android,Chrome Android,136,google,17,9,52.94,,Low Confidence,Previous Chrome
+2025-05-28,2025-06-24,Mobile,iOS,Chrome iOS,137,email,7,5,71.43,6.430000000000007,Low Confidence,Current Chrome
+2025-05-28,2025-06-24,Mobile,iOS,Chrome iOS,137,google,20,13,65.0,,Medium Confidence,Current Chrome
+2025-05-28,2025-06-24,Mobile,iOS,Safari iOS,18,email,71,47,66.2,12.350000000000001,High Confidence,Current Safari
+2025-05-28,2025-06-24,Mobile,iOS,Safari iOS,18,google,52,28,53.85,,High Confidence,Current Safari
+2025-05-28,2025-06-24,Mobile,iOS,Safari iOS,17,email,3,3,100.0,20.0,Very Low Confidence,Previous Safari
+2025-05-28,2025-06-24,Mobile,iOS,Safari iOS,17,google,5,4,80.0,,Low Confidence,Previous Safari
+2025-05-27,2025-06-23,Desktop,Windows,Chrome Windows,137,email,248,195,78.63,12.060000000000002,High Confidence,Current Chrome
+2025-05-27,2025-06-23,Desktop,Windows,Chrome Windows,137,google,353,235,66.57,,High Confidence,Current Chrome
+2025-05-27,2025-06-23,Desktop,Windows,Chrome Windows,136,email,89,73,82.02,14.599999999999994,High Confidence,Previous Chrome
+2025-05-27,2025-06-23,Desktop,Windows,Chrome Windows,136,google,132,89,67.42,,High Confidence,Previous Chrome
+2025-05-27,2025-06-23,Desktop,Windows,Chrome Windows,135,email,3,2,66.67,,Very Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,Windows,Chrome Windows,109,email,3,3,100.0,25.0,Very Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,Windows,Chrome Windows,109,google,4,3,75.0,,Very Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,Windows,Firefox Windows,139,email,38,25,65.79,-4.209999999999994,Medium Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,Windows,Firefox Windows,139,google,60,42,70.0,,High Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,Windows,Firefox Windows,138,email,9,4,44.44,-25.560000000000002,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,Windows,Firefox Windows,138,google,10,7,70.0,,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,Windows,Firefox Windows,137,email,5,4,80.0,,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,137,email,250,174,69.6,5.1299999999999955,High Confidence,Current Chrome
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,137,google,349,225,64.47,,High Confidence,Current Chrome
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,136,email,170,128,75.29,5.1000000000000085,High Confidence,Previous Chrome
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,136,google,208,146,70.19,,High Confidence,Previous Chrome
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,135,email,26,21,80.77,12.019999999999996,Medium Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,135,google,32,22,68.75,,Medium Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,134,email,6,5,83.33,20.83,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,134,google,8,5,62.5,,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,133,email,5,4,80.0,30.0,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,133,google,6,3,50.0,,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,132,email,3,0,0.0,,Very Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,131,email,8,7,87.5,-12.5,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,131,google,3,3,100.0,,Very Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,128,email,8,7,87.5,-4.810000000000002,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,128,google,13,12,92.31,,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,116,email,7,5,71.43,4.760000000000005,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Chrome macOS,116,google,9,6,66.67,,Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Safari macOS,19,email,3,3,100.0,33.33,Very Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Safari macOS,19,google,3,2,66.67,,Very Low Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Safari macOS,18,email,382,271,70.94,1.7099999999999937,High Confidence,Current Safari
+2025-05-27,2025-06-23,Desktop,macOS,Safari macOS,18,google,325,225,69.23,,High Confidence,Current Safari
+2025-05-27,2025-06-23,Desktop,macOS,Safari macOS,17,email,123,91,73.98,2.4000000000000057,High Confidence,Previous Safari
+2025-05-27,2025-06-23,Desktop,macOS,Safari macOS,17,google,95,68,71.58,,High Confidence,Previous Safari
+2025-05-27,2025-06-23,Desktop,macOS,Safari macOS,16,email,58,48,82.76,13.320000000000007,High Confidence,Other Version
+2025-05-27,2025-06-23,Desktop,macOS,Safari macOS,16,google,36,25,69.44,,Medium Confidence,Other Version
+2025-05-27,2025-06-23,Mobile,Android,Chrome Android,137,email,52,30,57.69,20.93,High Confidence,Current Chrome
+2025-05-27,2025-06-23,Mobile,Android,Chrome Android,137,google,68,25,36.76,,High Confidence,Current Chrome
+2025-05-27,2025-06-23,Mobile,Android,Chrome Android,136,email,13,9,69.23,13.670000000000002,Low Confidence,Previous Chrome
+2025-05-27,2025-06-23,Mobile,Android,Chrome Android,136,google,18,10,55.56,,Low Confidence,Previous Chrome
+2025-05-27,2025-06-23,Mobile,Android,Chrome Android,135,google,3,0,0.0,,Very Low Confidence,Other Version
+2025-05-27,2025-06-23,Mobile,iOS,Chrome iOS,137,email,7,5,71.43,8.27000000000001,Low Confidence,Current Chrome
+2025-05-27,2025-06-23,Mobile,iOS,Chrome iOS,137,google,19,12,63.16,,Low Confidence,Current Chrome
+2025-05-27,2025-06-23,Mobile,iOS,Safari iOS,18,email,74,50,67.57,14.629999999999995,High Confidence,Current Safari
+2025-05-27,2025-06-23,Mobile,iOS,Safari iOS,18,google,51,27,52.94,,High Confidence,Current Safari
+2025-05-27,2025-06-23,Mobile,iOS,Safari iOS,17,email,3,3,100.0,16.67,Very Low Confidence,Previous Safari
+2025-05-27,2025-06-23,Mobile,iOS,Safari iOS,17,google,6,5,83.33,,Low Confidence,Previous Safari
+2025-05-26,2025-06-22,Desktop,Windows,Chrome Windows,137,email,233,182,78.11,11.540000000000006,High Confidence,Current Chrome
+2025-05-26,2025-06-22,Desktop,Windows,Chrome Windows,137,google,329,219,66.57,,High Confidence,Current Chrome
+2025-05-26,2025-06-22,Desktop,Windows,Chrome Windows,136,email,103,84,81.55,12.61,High Confidence,Previous Chrome
+2025-05-26,2025-06-22,Desktop,Windows,Chrome Windows,136,google,161,111,68.94,,High Confidence,Previous Chrome
+2025-05-26,2025-06-22,Desktop,Windows,Chrome Windows,133,google,3,1,33.33,,Very Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,Windows,Chrome Windows,109,email,3,3,100.0,25.0,Very Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,Windows,Chrome Windows,109,google,4,3,75.0,,Very Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,Windows,Firefox Windows,139,email,37,24,64.86,-4.109999999999999,Medium Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,Windows,Firefox Windows,139,google,58,40,68.97,,High Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,Windows,Firefox Windows,138,email,13,8,61.54,-0.9600000000000009,Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,Windows,Firefox Windows,138,google,16,10,62.5,,Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,Windows,Firefox Windows,137,email,5,4,80.0,,Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,137,email,239,165,69.04,6.160000000000004,High Confidence,Current Chrome
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,137,google,326,205,62.88,,High Confidence,Current Chrome
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,136,email,191,144,75.39,3.3400000000000034,High Confidence,Previous Chrome
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,136,google,229,165,72.05,,High Confidence,Previous Chrome
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,135,email,29,24,82.76,14.190000000000012,Medium Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,135,google,35,24,68.57,,Medium Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,134,email,7,5,71.43,0.0,Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,134,google,7,5,71.43,,Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,133,email,4,3,75.0,25.0,Very Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,133,google,6,3,50.0,,Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,132,email,3,0,0.0,,Very Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,131,email,8,7,87.5,,Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,128,email,8,7,87.5,-4.170000000000002,Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,128,google,12,11,91.67,,Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,116,email,7,5,71.43,1.4300000000000068,Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Chrome macOS,116,google,10,7,70.0,,Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Safari macOS,19,email,3,3,100.0,33.33,Very Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Safari macOS,19,google,3,2,66.67,,Very Low Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Safari macOS,18,email,388,275,70.88,1.4699999999999989,High Confidence,Current Safari
+2025-05-26,2025-06-22,Desktop,macOS,Safari macOS,18,google,340,236,69.41,,High Confidence,Current Safari
+2025-05-26,2025-06-22,Desktop,macOS,Safari macOS,17,email,123,92,74.8,3.6700000000000017,High Confidence,Previous Safari
+2025-05-26,2025-06-22,Desktop,macOS,Safari macOS,17,google,97,69,71.13,,High Confidence,Previous Safari
+2025-05-26,2025-06-22,Desktop,macOS,Safari macOS,16,email,58,49,84.48,16.060000000000002,High Confidence,Other Version
+2025-05-26,2025-06-22,Desktop,macOS,Safari macOS,16,google,38,26,68.42,,Medium Confidence,Other Version
+2025-05-26,2025-06-22,Mobile,Android,Chrome Android,137,email,50,28,56.0,18.9,High Confidence,Current Chrome
+2025-05-26,2025-06-22,Mobile,Android,Chrome Android,137,google,62,23,37.1,,High Confidence,Current Chrome
+2025-05-26,2025-06-22,Mobile,Android,Chrome Android,136,email,15,10,66.67,6.670000000000002,Low Confidence,Previous Chrome
+2025-05-26,2025-06-22,Mobile,Android,Chrome Android,136,google,20,12,60.0,,Medium Confidence,Previous Chrome
+2025-05-26,2025-06-22,Mobile,Android,Chrome Android,135,google,3,0,0.0,,Very Low Confidence,Other Version
+2025-05-26,2025-06-22,Mobile,iOS,Chrome iOS,137,email,7,5,71.43,8.27000000000001,Low Confidence,Current Chrome
+2025-05-26,2025-06-22,Mobile,iOS,Chrome iOS,137,google,19,12,63.16,,Low Confidence,Current Chrome
+2025-05-26,2025-06-22,Mobile,iOS,Safari iOS,18,email,76,53,69.74,15.019999999999996,High Confidence,Current Safari
+2025-05-26,2025-06-22,Mobile,iOS,Safari iOS,18,google,53,29,54.72,,High Confidence,Current Safari
+2025-05-26,2025-06-22,Mobile,iOS,Safari iOS,17,email,3,3,100.0,16.67,Very Low Confidence,Previous Safari
+2025-05-26,2025-06-22,Mobile,iOS,Safari iOS,17,google,6,5,83.33,,Low Confidence,Previous Safari
+2025-05-25,2025-06-21,Desktop,Windows,Chrome Windows,137,email,221,173,78.28,10.980000000000004,High Confidence,Current Chrome
+2025-05-25,2025-06-21,Desktop,Windows,Chrome Windows,137,google,318,214,67.3,,High Confidence,Current Chrome
+2025-05-25,2025-06-21,Desktop,Windows,Chrome Windows,136,email,114,91,79.82,9.079999999999998,High Confidence,Previous Chrome
+2025-05-25,2025-06-21,Desktop,Windows,Chrome Windows,136,google,188,133,70.74,,High Confidence,Previous Chrome
+2025-05-25,2025-06-21,Desktop,Windows,Chrome Windows,133,google,3,1,33.33,,Very Low Confidence,Other Version
+2025-05-25,2025-06-21,Desktop,Windows,Chrome Windows,109,email,3,3,100.0,25.0,Very Low Confidence,Other Version
+2025-05-25,2025-06-21,Desktop,Windows,Chrome Windows,109,google,4,3,75.0,,Very Low Confidence,Other Version
+2025-05-25,2025-06-21,Desktop,Windows,Firefox Windows,139,email,34,21,61.76,-6.100000000000001,Medium Confidence,Other Version
+2025-05-25,2025-06-21,Desktop,Windows,Firefox Windows,139,google,56,38,67.86,,High Confidence,Other Version
+2025-05-25,2025-06-21,Desktop,Windows,Firefox Windows,138,email,18,12,66.67,1.6700000000000017,Low Confidence,Other Version
+2025-05-25,2025-06-21,Desktop,Windows,Firefox Windows,138,google,20,13,65.0,,Medium Confidence,Other Version

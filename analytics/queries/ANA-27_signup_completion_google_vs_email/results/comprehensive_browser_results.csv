@@ -1,0 +1,21 @@
+browser_platform,platform_category,sign_up_method,total_starts,total_completions,completion_rate_pct,avg_minutes_to_complete,median_minutes_to_complete,sample_size_category
+Chrome Android,Android,google,916,520,56.77,1.8619402985074627,0.0,Significant
+Chrome Android,Android,email,571,399,69.88,4.064453125,0.0,Significant
+Chrome macOS,Desktop,google,10614,8169,76.96,3.1980939414567735,0.0,Significant
+Chrome macOS,Desktop,email,7885,6194,78.55,5.797564911251284,0.0,Significant
+Safari macOS,Desktop,google,6993,5339,76.35,1.2867000172503018,0.0,Significant
+Safari macOS,Desktop,email,6896,5332,77.32,4.3745479593593934,0.0,Significant
+Chrome Windows,Desktop,google,6766,4998,73.87,2.188780053428317,0.0,Significant
+Chrome Windows,Desktop,email,4632,3628,78.32,4.131483715319662,0.0,Significant
+Firefox Windows,Desktop,email,765,585,76.47,3.5421875,0.0,Significant
+Firefox Windows,Desktop,google,659,484,73.44,5.260299625468165,0.0,Significant
+Firefox macOS,Desktop,email,490,359,73.27,2.4936386768447836,0.0,Significant
+Firefox macOS,Desktop,google,341,260,76.25,9.883561643835616,0.0,Significant
+Chrome Linux,Desktop,google,49,41,83.67,0.3333333333333333,0.0,Medium
+Firefox Linux,Desktop,email,26,22,84.62,1.5357142857142858,0.5,Small
+Chrome Linux,Desktop,email,21,16,76.19,0.3888888888888889,0.0,Small
+Firefox Linux,Desktop,google,16,11,68.75,0.8333333333333334,0.0,Small
+Safari iOS,iOS,email,1222,961,78.64,7.364503816793893,0.0,Significant
+Safari iOS,iOS,google,997,587,58.88,2.9389067524115755,0.0,Significant
+Chrome iOS,iOS,google,217,156,71.89,0.2625,0.0,Significant
+Chrome iOS,iOS,email,144,111,77.08,0.3025210084033613,0.0,Significant

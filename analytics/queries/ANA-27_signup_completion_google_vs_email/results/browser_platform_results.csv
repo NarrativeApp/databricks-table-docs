@@ -1,0 +1,11 @@
+browser_platform,sign_up_method,total_starts,total_completions,completion_rate_pct,avg_minutes_to_complete,sample_size_category
+macOS Chrome,google,10641,8180,76.87,3.1907455594524268,Significant
+macOS Chrome,email,7923,6225,78.57,5.76978102189781,Significant
+macOS Safari,google,7002,5344,76.32,1.2874375323108738,Significant
+macOS Safari,email,6919,5353,77.37,4.3578280232956494,Significant
+Windows Chrome,google,6777,5003,73.82,2.1845470692717583,Significant
+Windows Chrome,email,4649,3640,78.3,4.1197979312003845,Significant
+iOS Safari,email,1224,961,78.51,7.364503816793893,Significant
+iOS Safari,google,998,587,58.82,2.9389067524115755,Significant
+Android Chrome,google,916,520,56.77,1.8619402985074627,Significant
+Android Chrome,email,571,399,69.88,4.064453125,Significant

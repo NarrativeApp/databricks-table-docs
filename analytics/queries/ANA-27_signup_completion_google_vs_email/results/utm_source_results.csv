@@ -1,0 +1,10 @@
+traffic_source_category,sign_up_method,total_starts,total_completions,completion_rate_pct,sample_size_category
+Direct/Unknown,google,30169,22446,74.4,Significant
+Direct/Unknown,email,24502,19059,77.79,Significant
+select_app,email,960,616,64.17,Significant
+select_app,google,821,481,58.59,Significant
+ActiveCampaign,email,145,113,77.93,Significant
+ActiveCampaign,google,43,27,62.79,Medium
+google,google,28,20,71.43,Small Sample
+google,email,27,21,77.78,Small Sample
+email,email,20,8,40.0,Small Sample
