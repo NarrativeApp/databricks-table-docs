@@ -36,6 +36,23 @@ Based on the example models in `/exmaple models/`, tables are referenced in two 
 
 **Note**: When in doubt, use the fully qualified table names (e.g., `narrative.events.base`) as shown in the documentation.
 
+## Stripe Product Mapping
+
+**Narrative Select Product:**
+- **Stripe Product ID**: `prod_HE50j3A0xeeU2J`
+- **Main pricing tiers with trial usage**:
+  - `price_1RRLEmGyxyMEWHozjK6HlMIh` - Narrative Ultra-Month ($79/month) - 13,327 trial users
+  - `price_1RRLF5GyxyMEWHoz1gL5ncaO` - Narrative Ultra-Year ($720/year) - 8,046 trial users
+  - `price_1Rb7wQGyxyMEWHozEf6XMJdX` - Narrative Ultra Trial - Month ($0/month) - 4,335 trial users
+  - `plan_L1gfRtYofQqqhW` - Narrative Free-Month ($0/month) - 12,809 trial users
+  - Other pricing tiers with fewer trial users
+
+**Key Trial Analysis Notes**:
+- Use `narrative.stripe.subscriptions` table with `trial_start` and `trial_end` columns
+- Filter by `product_id = 'prod_HE50j3A0xeeU2J'` to get Select subscriptions
+- Join with `narrative.stripe.subscription_items` and `narrative.stripe.prices` for pricing details
+- Trial status can be identified by `status = 'trialing'` or checking `trial_start IS NOT NULL`
+
 ## Working with the Documentation
 
 The documentation has been split into manageable files in the `databricks-docs/` directory:
