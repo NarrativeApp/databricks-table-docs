@@ -1,5 +1,6 @@
 -- ANA-57: Trial to Paid Conversion Rate for Narrative Select Product
 -- Shows what percentage of trial users convert to paid subscriptions
+-- Uses same trial status logic as user summary table
 
 WITH select_trials AS (
     SELECT 
@@ -15,15 +16,26 @@ WITH select_trials AS (
         p.id as price_id,
         p.nickname as price_name,
         p.unit_amount / 100.0 as price_usd,
-        p.recurring_interval
+        p.recurring_interval,
+        -- Trial status matching user summary table logic
+        CASE 
+            WHEN s.trial_start IS NULL THEN 'No Trial'
+            WHEN s.status = 'trialing' THEN 'Active Trial'
+            WHEN s.trial_end IS NOT NULL AND s.trial_end < CURRENT_DATE THEN 'Trial Finished'
+            WHEN s.trial_start IS NOT NULL AND s.trial_end IS NULL AND s.trial_start + INTERVAL '30 days' < CURRENT_DATE THEN 'Trial Finished'
+            ELSE 'Trial Active'
+        END as trial_status
     FROM narrative.stripe.subscriptions s
     JOIN narrative.stripe.subscription_items si ON s.id = si.subscription_id
     JOIN narrative.stripe.prices p ON si.price_id = p.id
     WHERE p.product_id = 'prod_HE50j3A0xeeU2J'  -- Select product
         AND s.trial_start IS NOT NULL  -- Only subscriptions that had trials
-        AND (s.trial_end < CURRENT_DATE AND s.trial_start + INTERVAL '30 days' < CURRENT_DATE)  -- Trial has ended with 30-day buffer
-        AND s.status != 'trialing'  -- Not currently trialing
         AND s.trial_start > '2025-05-01'  -- Filter for recent trials
+),
+filtered_trials AS (
+    SELECT * 
+    FROM select_trials
+    WHERE trial_status = 'Trial Finished'  -- Only finished trials using consistent logic
 ),
 conversion_status AS (
     SELECT 
@@ -43,8 +55,11 @@ conversion_status AS (
             ELSE 'other'
         END as conversion_outcome,
         -- Additional context
-        DATEDIFF(DATE(trial_end), DATE(trial_start)) as trial_length_days
-    FROM select_trials
+        CASE 
+            WHEN trial_end IS NOT NULL THEN DATEDIFF(DATE(trial_end), DATE(trial_start))
+            ELSE 30  -- Default 30 days for trials without explicit end date
+        END as trial_length_days
+    FROM filtered_trials
 )
 SELECT 
     -- Overall conversion metrics

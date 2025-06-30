@@ -107,8 +107,78 @@ Simplified view of paid plan adoption after trial completion:
 4. **Trial Clustering:** Days 21-23 represent critical decision points for users
 5. **Cohort Evolution:** Newer cohorts (June 2025) start with lower paid tier adoption but show similar progression patterns
 
+## ARPU Analysis
+
+### Select Product ARPU Analysis (Monthly-Normalized)
+Comprehensive analysis using invoice line items with yearly plans normalized to monthly values:
+
+| Month | Paying Customers | Total Revenue | Select ARPU | MoM Growth |
+|-------|------------------|---------------|-------------|------------|
+| 2025-06 | 2,036 | $52,423 | **$25.75** | +35.87% |
+| 2025-05 | 2,436 | $46,165 | **$18.95** | -1.74% |
+| 2025-04 | 2,204 | $42,507 | **$19.29** | -0.80% |
+| 2025-03 | 2,081 | $40,459 | **$19.44** | -0.53% |
+| 2025-02 | 2,040 | $39,875 | **$19.55** | +0.39% |
+
+**Select Customer Base Overview:**
+- **Total Select customers:** 63,113 (since 2024)
+- **Active paying customers:** 18,618 total
+- **Monthly revenue-generating customers:** ~2,000-2,400 (active billing cycles)
+- **Trial customers:** 19,090 currently active
+
+**Select ARPU Key Insights:**
+- **Current Select ARPU:** $25.75 in June 2025 (monthly-normalized)
+- **ARPU range:** $18.50-$25.75 over past 18 months
+- **Customer growth:** Generally stable ~2,000 paying customers per month
+- **Revenue methodology:** Yearly subscriptions normalized to monthly ($720/year → $60/month)
+- **Plan distribution:** Mix of Standard ($29/month, $240/year) and Ultra ($79/month, $720/year) tiers
+
+### Select Trial-Specific ARPU
+Analysis of Select trial users shows **0 revenue to date** - this is expected since:
+- Trials filtered to start after May 1, 2025
+- Most trials are 30 days, meaning earliest completions would be early June
+- Trial users typically convert to free plans initially (76% free conversion rate)
+- Revenue generation occurs post-trial conversion to paid plans
+
+**Future ARPU Tracking:**
+- Monitor trial-to-paid conversion revenue in July-August 2025
+- Track revenue from the 8.68% who convert directly to paid plans
+- Analyze revenue from free-to-paid conversion paths over time
+
+## Paywall Conversion Analysis
+
+### New Paywall Performance (May-June 2025)
+Analysis of users who encountered the new `select_paywall_locked_no_active_plan`:
+
+| Product Status | Users | Conversion Rate | Paid Conversion | Avg Time to Convert |
+|----------------|-------|-----------------|-----------------|---------------------|
+| **Canceled** | 108 (53%) | **26.85%** | 24.07% | 55.1 hours |
+| **Incomplete Expired** | 15 (7%) | **46.67%** | 40.00% | 166.9 hours |
+| **Null/Unknown** | 53 (26%) | **9.43%** | 5.66% | 319.3 hours |
+| **Active** | 24 (12%) | **0.00%** | 0.00% | - |
+| **Paused** | 3 (1%) | **33.33%** | 33.33% | 0.0 hours |
+
+**Paywall Key Insights:**
+- **203 unique users** saw the paywall across 635 total events
+- **Former customers convert best:** Canceled (26.85%) and expired (46.67%) users show highest conversion
+- **Premium preference:** 85-100% of conversions from lapsed users choose paid plans
+- **Re-engagement tool:** Paywall most effective for reactivating former subscribers
+- **Quick decisions:** Most conversions happen within 2-7 days of seeing paywall
+
 ## Recommendations
 
+### Trial Optimization
 1. **Focus on yearly plan promotion** during trial period given higher conversion rates
 2. **Optimize day 21-23 user experience** when most decisions are made
 3. **Investigate free-to-paid conversion paths** for the 76% who initially choose free plans
+4. **Monitor Select trial ARPU** starting July 2025 as trials complete and convert to paid plans
+
+### Paywall Strategy
+5. **Target former customers** with paywall since canceled/expired users show 27-47% conversion rates
+6. **Customize paywall messaging** by product status - emphasize reactivation for lapsed users
+7. **Design follow-up campaigns** for 2-13 day consideration periods post-paywall
+8. **Leverage paywall for re-engagement** rather than new customer acquisition
+
+### Platform Strategy  
+9. **Leverage platform ARPU insights** to benchmark Select product performance against overall $34-40 ARPU range
+10. **Track paywall conversion quality** vs other acquisition channels for long-term retention
